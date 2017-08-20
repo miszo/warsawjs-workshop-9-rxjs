@@ -1,7 +1,7 @@
 function fetchData(url) {
   return new Promise(function(resolve, reject) {
     const httpReq = new XMLHttpRequest();
-    httpReq.open('get', url, true)
+    httpReq.open('get', url, true);
     httpReq.addEventListener('load', function() {
       resolve(httpReq.response);
     });
